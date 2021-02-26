@@ -60,6 +60,9 @@ public class Main {
                 }
                 System.out.println("Hand Cards: ");
                 hand.printcards();
+
+                System.out.println("Number of cards in deck: " + stack.size());
+                System.out.println("Number of cards in discard: " + discard.size());
                 Pause = scan.next();
             }
             //draw from discard
@@ -71,8 +74,11 @@ public class Main {
                     System.out.println("Popping from Discard: " + discard.pop());
                     discard.push(discard.pop());
                 }
-                System.out.println("Discard Piles Cards: ");
-                hand.printcards();
+                System.out.println("Hand Cards: ");
+                discard.printcards();
+
+                System.out.println("Number of cards in deck: " + stack.size());
+                System.out.println("Number of cards in discard: " + discard.size());
                 Pause = scan.next();
             }
             //discard
@@ -86,6 +92,11 @@ public class Main {
                 }
                 System.out.println("Discard Piles Cards: ");
                 discard.printcards();
+                System.out.println("Hand Cards: ");
+                hand.printcards();
+
+                System.out.println("Number of cards in deck: " + stack.size());
+                System.out.println("Number of cards in discard: " + discard.size());
                 Pause = scan.next();
             }
         }
